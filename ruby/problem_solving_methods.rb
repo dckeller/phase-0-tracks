@@ -1,5 +1,6 @@
 def search_array(array, num)
   array.index(num)
+
 end
 
 array = [1, 2, 3, 4, 5]

@@ -24,11 +24,20 @@ class Puppy
 
 end
 
+# 50.times do
+#   array = []
+#   array << Puppy.new
+#   array.each { |instance| instance.fetch("ball") }
+# end
+
 50.times do
-  array = []
-  array << Puppy.new
-  array.each { |instance| instance.fetch("ball") }
+  hash = {}
+  hash[Puppy.new] = 2
+  p hash
 end
+
+
+
 # puppy1.fetch("ball")
 # puppy1.speak(2)
 # puppy1.roll_over

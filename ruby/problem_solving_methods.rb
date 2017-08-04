@@ -11,12 +11,14 @@ index = 2
 fib_array << 0
 fib_array << 1
 fib_array << 1
-fib_array << (fib_array[index] + fib_array[index])
-  #end
-#index += 1
+  while index < num
+    fib_array << (fib_array[index -1] + fib_array[index])
+  index += 1
+  end
+  fib_array
 end
 
-p fib(5)
+p fib(7)
 
 
 
